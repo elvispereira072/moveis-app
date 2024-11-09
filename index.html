@@ -18,17 +18,28 @@
             height: 100%;
         }
 
+
+        #home {
+    text-align: center; /* Centraliza o texto dentro da section */
+}
+
+p {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+}
+
         .background-video {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transform: translate(-50%, -50%);
-            z-index: -1;
-            opacity: 0.7;
-        }
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40%; /* Diminui a largura para 40% */
+    height: 40%; /* Diminui a altura para 40% */
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
 
         nav {
             background: black;
@@ -271,7 +282,7 @@
             <a href="sobre.html"><i class="fas fa-home"></i> Sobre Nós</a>
         </div>
     </nav>
-
+<br>
     <div class="content">
         <!-- Seção de introdução -->
         <section id="home">
@@ -355,4 +366,3 @@
 </body>
 
 </html>
-
