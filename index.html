@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -19,31 +19,30 @@
             height: 100%;
         }
 
- #home h2 {
-    font-family: 'Khand', sans-serif;
-    font-size: 3em; /* Ajuste o valor conforme necessário */
-}
-        #home {
-    text-align: center; /* Centraliza o texto dentro da section */
-}
+        #home h2 {
+            font-family: 'Khand', sans-serif;
+            font-size: 3em;
+        }
 
-p {
-    margin: 0; /* Remove a margem padrão do parágrafo */
-}
+        #home {
+            text-align: center;
+        }
+
+        p {
+            margin: 0;
+        }
 
         .background-video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 40%; /* Diminui a largura para 40% */
-    height: 40%; /* Diminui a altura para 40% */
-    object-fit: cover;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    opacity: 0.7;
-}
-
-
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 40%;
+            height: 40%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            opacity: 0.7;
+        }
 
         nav {
             background: black;
@@ -176,106 +175,100 @@ p {
             padding: 10px;
         }
 
-
-
         .comment-section {
-    width: 50%; /* Largura da seção */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 20px;
-    border: 1px solid yellow;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid yellow;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.comment-section h2 {
-    text-align: center; /* Centraliza o título */
-    margin-bottom: 20px;
-}
+        .comment-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-.comment-section form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+        .comment-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
 
-.comment-section input[type="text"],
-.comment-section textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid;;
-    border-radius: 5px;
-}
+        .comment-section input[type="text"],
+        .comment-section textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 5px;
+        }
 
-.comment-section button {
-    align-self: center; /* Centraliza o botão */
-    padding: 10px 20px;
-    background-color: navy;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+        .comment-section button {
+            align-self: center;
+            padding: 10px 20px;
+            background-color: navy;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-.comment-section button:hover {
-    background-color: navy;
-}
+        .comment-section button:hover {
+            background-color: navy;
+        }
 
-.comments {
-    margin-top: 20px;
-}
+        .comments {
+            margin-top: 20px;
+        }
 
-.comment {
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-}
+        .comment {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
 
-.comment p {
-    margin: 0;
-    color: black;
-}
+        .comment p {
+            margin: 0;
+            color: black;
+        }
 
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 95%;
+            background-color: #000;
+        }
 
-/* Container responsivo para vídeos */
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio (proporção padrão de vídeos) */
-    height: 0;
-    overflow: hidden;
-    max-width: 95%;
-    background-color: #000; /* Cor de fundo enquanto o vídeo carrega */
-}
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
 
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
+        @media (max-width: 768px) {
+            .video-container {
+                max-width: 100%;
+            }
+        }
 
-/* Ajustes para telas menores */
-@media (max-width: 768px) {
-    .video-container {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .video-container {
-        max-width: 100%;
-        padding-bottom: 75%; /* Ajuste a proporção para telas muito pequenas, se necessário */
-    }
-}
+        @media (max-width: 480px) {
+            .video-container {
+                max-width: 100%;
+                padding-bottom: 75%;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <!-- Vídeo de fundo -->
     <video class="background-video" autoplay muted loop playsinline>
         <source src="assets/fruta.mp4" type="video/mp4">
-        Seu navegador não suporta a tag de vídeo.
+        Your browser does not support the video tag.
     </video>
 
     <nav class="content">
@@ -283,19 +276,16 @@ p {
             <i class="fas fa-bars"></i>
         </div>
         <div class="menu-items" id="menuItems">
-            <a href="sobre.html"><i class="fas fa-home"></i> Sobre Nós</a>
+            <a href="about.html"><i class="fas fa-home"></i> About Us</a>
         </div>
     </nav>
-<br>
+    <br>
     <div class="content">
-        <!-- Seção de introdução -->
         <section id="home">
             <h2>Movies</h2>
         </section>
         
-        <!-- Seção de vídeos -->
         <section id="products" class="product-section">
-            <!-- Primeiro Vídeo do YouTube -->
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/sQJAUl6xupI"
                     title="YouTube video player" frameborder="0"
@@ -304,7 +294,6 @@ p {
             </div>
             <br><br>
 
-            <!-- Segundo Vídeo do YouTube -->
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/x5pZI-DmtrE"
                     title="YouTube video player" frameborder="0"
@@ -315,9 +304,7 @@ p {
     </div>
    <br><br>
     
-    <!-- Seção de vídeos -->
     <section id="products" class="product-section">
-        <!-- Terceiro Vídeo do YouTube -->
         <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/NmTPDA15lPA"
                 title="YouTube video player" frameborder="0"
@@ -326,7 +313,6 @@ p {
         </div>
         <br><br>
 
-        <!-- Quarto Vídeo do YouTube -->
         <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/i9QdSVbCJLk"
                 title="YouTube video player" frameborder="0"
@@ -336,21 +322,20 @@ p {
     </section>
    <br><br>
     
-    <!-- Seção de comentários -->
     <section id="comments" class="comment-section">
-        <h2>Deixe seu comentário</h2>
+        <h2>Leave Your Comment</h2>
         <form>
-            <input type="text" name="name" placeholder="Seu nome" required>
-            <textarea name="comment" rows="4" placeholder="Seu comentário" required></textarea>
-            <button type="submit">Enviar Comentário</button>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <textarea name="comment" rows="4" placeholder="Your Comment" required></textarea>
+            <button type="submit">Submit Comment</button>
         </form>
 
         <div class="comments">
             <div class="comment">
-                <p><strong>João Silva:</strong> Ótima seleção de filmes! Recomendo a todos.</p>
+                <p><strong>João Silva:</strong> Great movie selection! Highly recommend to everyone.</p>
             </div>
             <div class="comment">
-                <p><strong>Ana Costa:</strong> Adorei o vídeo sobre filmes clássicos. Muito informativo!</p>
+                <p><strong>Ana Costa:</strong> Loved the video about classic movies. Very informative!</p>
             </div>
         </div>
     </section>
@@ -358,7 +343,7 @@ p {
     
     <footer>
         <div class="footer-bottom">
-            © 2024 Sua Empresa. Todos os direitos reservados
+            © 2024 Your Company. All rights reserved
         </div>
     </footer>
 
